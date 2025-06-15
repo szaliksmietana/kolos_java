@@ -2,12 +2,16 @@ package pl.example;
 
 
 public abstract class Produkt {
+    private String nazwaProduktu;
+    private Integer Waga;
+    private Float cenaZaSztuke;
+
     public void setCenaZaSztuke(Float cenaZaSztuke) {
         this.cenaZaSztuke = cenaZaSztuke;
     }
 
     public void setWaga(Integer waga) {
-        Waga = waga;
+        this.Waga = waga;
     }
 
     public void setNazwaProduktu(String nazwaProduktu) {
@@ -26,7 +30,6 @@ public abstract class Produkt {
         return nazwaProduktu;
     }
 
-    private String nazwaProduktu;
-    private Integer Waga;
-    private Float cenaZaSztuke;
+
+    public Produkt() {}
 }

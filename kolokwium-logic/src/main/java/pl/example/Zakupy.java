@@ -27,7 +27,7 @@ public class Zakupy implements ZakupyInterface {
         }
 
         int aktualnaWaga = CalkowitaWagaProduktow();
-        int wagaNowego = produkt.getWaga() * produkt.getWaga();
+        int wagaNowego = produkt.getWaga() * produkt.getLiczbaSztuk();
 
         if (aktualnaWaga + wagaNowego > MAX_WAGA) {
             throw new IncorrectValueException("Przekroczeno makszymalną wagę 20kg, Aktualna: " +

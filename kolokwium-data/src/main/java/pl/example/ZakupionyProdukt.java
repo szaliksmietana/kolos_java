@@ -2,6 +2,8 @@ package pl.example;
 
 
 public class ZakupionyProdukt extends Produkt{
+    private Integer liczbaSztuk;
+
     public void setLiczbaSztuk(Integer liczbaSztuk) {
         this.liczbaSztuk = liczbaSztuk;
     }
@@ -10,5 +12,6 @@ public class ZakupionyProdukt extends Produkt{
         return liczbaSztuk;
     }
 
-    Integer liczbaSztuk;
+
+    public ZakupionyProdukt() {}
 }

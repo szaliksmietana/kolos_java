@@ -39,6 +39,7 @@ public class Main {
                         System.out.println("Liczba sztuk: ");
                         nowy.setLiczbaSztuk(Integer.parseInt(scanner.nextLine()));
 
+                        zakupy.dodawanieProduktu(nowy);
                         System.out.println("Produkt został dodany!");
                     }catch(Exception e){
                         System.out.println(e.getMessage());
@@ -76,7 +77,7 @@ public class Main {
 
                 case "5":
                     System.out.println("podaj nazwe pliku do zapisu: ");
-                    /*
+
                     String nazwaPliku = scanner.nextLine();
 
                     Thread watekZapis = new Thread(() -> {
@@ -91,15 +92,13 @@ public class Main {
                         }
                     });
 
-                watekZapis.start();
-
-                     */
+                    watekZapis.start();
                     break;
 
-                    case "6":
-                    System.out.println("Zamykam program. Do widzenia!");
-                    run = false;
-                    break;
+                case "6":
+                System.out.println("Zamykam program. Do widzenia!");
+                run = false;
+                break;
 
 
             }
