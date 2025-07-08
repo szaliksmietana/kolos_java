@@ -1,0 +1,5 @@
+pl\data\kolos\wyp\service\IFileExport.class
+pl\data\kolos\wyp\service\TxtExporter.class
+pl\data\kolos\wyp\service\IWypozyczenieService.class
+pl\data\kolos\wyp\service\KolosWypService.class
+pl\data\kolos\wyp\service\WypozyczenieService.class
